@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the progress bar container */
+        .progress-container {
+            width: 50%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+        }
+
+        /* Style the progress bar itself */
+        .progress-bar {
+            width: 0%; /* Start with 0% width */
+            height: 30px;
+            background-color: #4caf50; /* Background color */
+            border-radius: 20px; /* Rounded corners */
+            transition: width 0.5s ease; /* Smooth animation */
+        }
+
+        /* Add animation on hover */
+        .progress-container:hover .progress-bar {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>
